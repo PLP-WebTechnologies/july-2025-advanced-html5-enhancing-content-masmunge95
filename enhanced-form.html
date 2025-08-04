@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="A simple HTML document for Week 2 assignment in Web Development V2">
+    <meta name="keywords" content="HTML, Web Development, Week 2 Assignment">
+    <meta name="author" content="Your Name">
+    <title>Enhancing HTML5 Content & Mastering Forms</title>
+</head>
+
+<body> 
+    <header>
+    <h1>Learning schedule at PLP Academy</h1>
+    <p>This page outlines the learning schedule for Software Development course at PLP Academy for July 2025 Cohort.</p>
+
+    <nav>
+        <ul>
+            <li><a href="#introduction">Introduction</a></li>
+            <li><a href="#program-modules">Program Modules</a></li>
+            <li><a href="#feedback-form">Feedback Form</a></li>
+        </ul>
+    </nav>
+    </header>
+    <br>
+
+    <main>
+        <section id="introduction">
+            <h2>Introduction</h2>
+            <p>PLP Academy offers a comprehensive curriculum designed to equip students with the skills necessary for a successful career in web development. After completing a two-week orientation, students are introduced to three core modules that are essential for their software development journey.</p>
+            <video controls loop width="600" height="400">
+                <source src="https://videos.pexels.com/video-files/2516160/2516160-hd_1920_1080_24fps.mp4" type="video/mp4">
+                Your browser does not support the video tag.
+            </video>
+            <br>
+
+            <p>If you’d like some background audio, here’s a track I hope you’ll enjoy:</p>
+            <audio controls loop>
+                <source src="mixkit-hip-hop-02-738.mp3" type="audio/mpeg">
+                Your browser does not support the audio tag.
+            </audio>
+        </section>
+        <br>
+        <br>
+
+        <section id="program-modules">
+            <h2>Program Modules</h2>
+            <p>The 3 main modules covered from week to week are as follows:</p>
+            <figure>
+                <img src="https://images.pexels.com/photos/546819/pexels-photo-546819.jpeg" alt="Photo of a monitor with code on the screen" width="600" height="400">
+                <figcaption>Learning to code</figcaption>
+            </figure>
+            <br>
+
+            <dl>
+                <dt><strong>(i) Web Development V2</strong></dt>
+                <br>
+                <dd>Focuses on HTML5, CSS3, and JavaScript, including responsive design and modern frameworks.</dd>
+                <br>
+                <dt><strong>(ii) Python Basics</strong></dt>
+                <br>
+                <dd>Introduces Python programming, covering syntax, data types, and control structures.</dd>
+                <br>
+                <dt><strong>(iii) Database Design & Structures</strong></dt>
+                <br>
+                <dd>Covers the fundamentals of database design, including entity-relationship modeling and normalization.</dd>
+            </dl>
+            <br>
+
+            <h2>Learning schedule</h2>
+            <p>The learning schedule is structured to balance theory with practical application. Hands-on projects and assessments are conducted at the end of each week. Each week focuses on a specific topic within a module, ensuring comprehensive coverage. The weekly schedule is as follows:</p>
+            <br>
+            <table border="1">
+                <caption>Learning Schedule</caption>
+                <thead>
+                    <tr>
+                        <th>Module</th>
+                        <th>Day Of The Week</th>
+                        <th>Time Slot</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Web Development V2</td>
+                        <td>Monday</td>
+                        <td>
+                            <ul>
+                                <li>10:00 AM - 12:00 PM</li>
+                                <li>2:00 PM - 4:00 PM</li>
+                                <li>6:30 PM - 8:30 PM</li>
+                            </ul>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>Python</td>
+                        <td>Tuesday</td>
+                        <td>
+                            <ul>
+                                <li>10:00 AM - 12:00 PM</li>
+                                <li>2:00 PM - 4:00 PM</li>
+                                <li>6:30 PM - 8:30 PM</li>
+                            </ul>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>Database Design & Structures</td>
+                        <td>Thursday</td>
+                        <td>
+                            <ul>
+                                <li>10:00 AM - 12:00 PM</li>
+                                <li>2:00 PM - 4:00 PM</li>
+                                <li>6:30 PM - 8:30 PM</li>
+                            </ul>
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+        </section>
+        <br>
+        <br>
+        
+        <section id="form-data-enforcements">
+            <h2>Contact Form</h2>
+            <p>To provide feedback, kindly fill out the form below:</p>
+            <br>
+            <form action="#" method="post">
+                <fieldset>
+                    <legend><strong>Personal Information</strong></legend>
+                    <label for="name">Name:</label><br>
+                    <input type="text" id="name" name="name" maxlength="30" placeholder="Enter your name here..." autocomplete="name"><br><br>
+
+                    <label for="email">Email:</label><br>
+                    <input type="email" id="email" name="email" required placeholder="E.g. john@domain.com" autocomplete="email"><br><br>
+
+                    <label for="age">Age:</label><br>
+                    <input type="number" id="age" name="age" min="18" required placeholder="Enter your age here..." autocomplete="bday"><br><br>
+
+                    <label for="gender">Gender:</label><br>
+                    <select id="gender" name="gender" required>
+                        <option value="" disabled selected>Select your gender</option>
+                        <option value="male">Male</option>
+                        <option value="female">Female</option>
+                        <option value="other">Other</option>
+                    </select><br><br>
+
+                    <label for="form-version">Form Version:</label>
+                    <input type="text" id="form-version" name="form-version" value="1.0" readonly><br><br>
+                </fieldset>
+
+                <fieldset>
+                    <legend><strong>Feedback</strong></legend>
+                    <label for="rating">Rating:</label><br>
+                    <input type="radio" id="excellent" name="rating" value="excellent">
+                    <label for="excellent">Excellent</label><br>
+                    <input type="radio" id="good" name="rating" value="good">
+                    <label for="good">Good</label><br>
+                    <input type="radio" id="average" name="rating" value="average">
+                    <label for="average">Average</label><br>
+                    <input type="radio" id="poor" name="rating" value="poor">
+                    <label for="poor">Poor</label><br><br>
+                    <label for="upload">Upload a file (optional):</label><br>
+                    <input type="file" id="upload" name="upload" accept=".jpg, .jpeg, .png, .pdf"><br><br>
+                    <label for="comments">Comments:</label><br>
+                    <textarea id="comments" name="comments" rows="10" cols="30" placeholder="Enter your comments here..."></textarea><br><br>
+                </fieldset>
+                <button type="submit">Submit</button>
+            </form>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2025 PLP Academy. All rights reserved.</p>
+    </footer>
+
+</body>
+
+</html>
